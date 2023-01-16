@@ -14,7 +14,7 @@ public class ejer9 {
         double a = 1;
         int n;
 
-        System.out.println("dame un numero entero pasitivo");
+        System.out.println("dame un numero entero positivo");
         n = new Scanner(System.in).nextInt();
         s = (1 / 2) * (a + n / a);
         System.out.println(s);
