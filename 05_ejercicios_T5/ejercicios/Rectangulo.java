@@ -27,15 +27,16 @@ public class Rectangulo {
     }
 
     public int getBase() {
-        return Base;
+        return this.Base;
     }
 
     public int getAltura() {
-        return Altura;
+        return this.Altura;
     }
 
     public int getArea() {
-        return Area;
+        Area=Base*Altura;
+        return this.Area;
     }
     
     
