@@ -17,15 +17,19 @@ public class Sorteo {
     public Sorteo(double D, int T) {
         this.DineroCupon = D;
         this.TotalParticipantes = T;
+        this.PagosRealizados=0;
+        this.PagosPendientes=T;
     }
 
     void RegistrarPago() {
         this.PagosPendientes--;
         this.PagosRealizados++;
+        this.DineroRecogido+=DineroCupon;
     }
 
     void ApuntarNuevoParticipante() {
         this.TotalParticipantes++;
+        this.PagosPendientes++;
     }
 
     public double getDineroCupon() {
@@ -44,24 +48,6 @@ public class Sorteo {
         return this.DineroRecogido;
     }
 
-    public void setDineroCupon(double DineroCupon) {
-        this.DineroCupon = DineroCupon;
-    }
-
-    public void setPagosRealizados(int PagosRealizados) {
-        this.PagosRealizados = PagosRealizados;
-    }
-
-    public void setPagosPendientes(int PagosPendientes) {
-        this.PagosPendientes = PagosPendientes;
-    }
-
-    public void setTotalParticipantes(int TotalParticipantes) {
-        this.TotalParticipantes = TotalParticipantes;
-    }
-
-    public void setDineroRecogido(double DineroRecogido) {
-        this.DineroRecogido = DineroRecogido;
-    }
+   
 
 }
